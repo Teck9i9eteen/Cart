@@ -1,5 +1,6 @@
 <!DOCTYPE html> <html><head>
-        <title>Cart</title>
+        <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+        <title>Mason's Automatic Pop-Shop</title>
     <script>function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 /*! jQuery v3.2.1 | (c) JS Foundation and other contributors | jquery.org/license */
@@ -4026,33 +4027,74 @@
   return r.noConflict = function (b) {
     return a.$ === r && (a.$ = Wb), b && a.jQuery === r && (a.jQuery = Vb), r;
   }, b || (a.jQuery = a.$ = r), r;
-});</script><style>.header, .inventory{
+});</script><style>.header,
+.inventory {
     display: flex;
     justify-content: space-between;
+    background-color: red;
+    border: 5px dashed blue;
 }
 
-button {
-    display: flex;
+#Add, #Checkout{
+    Display: flex;
     justify-content: space-around;
-    
+}
+
+h1,
+h2 {
+    Text-align: center;
+    Background-color: black;
+    Color: Gold;
+    border: 5px dashed #04ff00;
+}
+
+.total {
+    Background-color: black;
+    color: white;
+    border: 5px dashed #00e9ff;
+}
+
+html {
+    Background-color: black;
+    font-family: 'Gugi', cursive;
 }</style></head>
     <body>
-    <div class="header">
-        <p>Product name:</p>
-        <p>Product Image:</p>
-        <p>Price of product:</p>
-        <p>Items in cart:</p>
-        </div>
-        
-        <div class="inventory">
-        <p>Product Name:<input class="Name" placeholder="Type Response"></p>
-        <p>Image url:<input class="" placeholder="Type Response"></p>
-        <p>Product Price:<input class="Name" placeholder="Type Response"></p>
-        
-        </div>
-        
-        <button>Add me</button>
-        <button>Procced to Checkout</button>
-    
 
-</body></html>
+        <h1>Mason's Automatic Pop-Shop</h1>
+        <h2>Get what you need, <em><strong>Automatically</strong></em></h2>
+        <div class="header">
+            <p>Product Image:</p>
+            <p>Product name:</p>
+            <p>Price of product:</p>
+            <p>Items in cart:</p>
+        </div>
+
+        <div class="inventory">
+            <p>Image url:<input class="URL" placeholder="Type Response"></p>
+            <p>Product Name:<input class="Name" placeholder="Type Response"></p>
+            <p>Product Price:<input class="Price" placeholder="Type Response"></p>
+
+        </div>
+        <div id="Add">
+            <button class="AddMe">Add me</button>
+        </div>
+
+        <div id="Checkout">
+            <button class="PleaseCheckout">Procced to Checkout</button>
+        </div>
+
+
+        <div class="total">
+            <p>Total: </p>
+        </div>
+    
+<script>
+/*__POPCODESTART__*/
+var name = $("#URL").val();
+var name = $("#Price").val();
+var name = $("#Name").val();
+
+
+$(".AddMe").click(function() {
+    $(
+}</script></body></html>
