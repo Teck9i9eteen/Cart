@@ -1,24 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Cart</title>
+        <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+        <title>Mason's Automatic Pop-Shop</title>
     </head>
     <body>
-    <div class="header">
-        <p>Product name:</p>
-        <p>Product Image:</p>
-        <p>Price of product:</p>
-        <p>Items in cart:</p>
+
+        <h1>Mason's Automatic Pop-Shop</h1>
+        <h2>Get what you need, <em><strong>Automatically</strong></em></h2>
+        <div class="header">
+            <p>Product Image:</p>
+            <p>Product name:</p>
+            <p>Price of product:</p>
+            <p>Items in cart:</p>
         </div>
-        
+
         <div class="inventory">
-        <p>Product Name:<input class="Name" placeholder="Type Response"></p>
-        <p>Image url:<input class="" placeholder="Type Response"></p>
-        <p>Product Price:<input class="Name" placeholder="Type Response"></p>
-        
+            <p>Image url:<input class="URL" placeholder="Type Response"></p>
+            <p>Product Name:<input class="Name" placeholder="Type Response"></p>
+            <p>Product Price:<input class="Price" placeholder="Type Response"></p>
+
         </div>
-        
-        <button>Add me</button>
-        <button>Procced to Checkout</button>
+        <div id="Add">
+            <button class="AddMe">Add me</button>
+        </div>
+
+        <div id="Checkout">
+            <button class="PleaseCheckout">Procced to Checkout</button>
+        </div>
+
+
+        <div class="total">
+            <p>Total: </p>
+        </div>
     </body>
 </html>
