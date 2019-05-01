@@ -6,7 +6,8 @@
     border: 5px dashed blue;
 }
 
-#Add, #Checkout{
+#Add,
+#Checkout {
     Display: flex;
     justify-content: space-around;
 }
