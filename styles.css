@@ -1,10 +1,31 @@
-.header, .inventory{
+.header,
+.inventory {
     display: flex;
     justify-content: space-between;
+    background-color: red;
+    border: 5px dashed blue;
 }
 
-button {
-    display: flex;
+#Add, #Checkout{
+    Display: flex;
     justify-content: space-around;
-    
+}
+
+h1,
+h2 {
+    Text-align: center;
+    Background-color: black;
+    Color: Gold;
+    border: 5px dashed #04ff00;
+}
+
+.total {
+    Background-color: black;
+    color: white;
+    border: 5px dashed #00e9ff;
+}
+
+html {
+    Background-color: black;
+    font-family: 'Gugi', cursive;
 }
