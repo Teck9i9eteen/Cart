@@ -4071,9 +4071,9 @@ html {
         </div>
 
         <div class="inventory">
-            <p>Image url:<input class="URL" placeholder="Type Response"></p>
-            <p>Product Name:<input class="Name" placeholder="Type Response"></p>
-            <p>Product Price:<input class="Price" placeholder="Type Response"></p>
+            <p>Image url:<input id="image" placeholder="Type Response"></p>
+            <p>Product Name:<input id="Name" placeholder="Type Response"></p>
+            <p>Product Price:<input id="Price" placeholder="Type Response"></p>
 
         </div>
         <div id="Add">
@@ -4091,13 +4091,19 @@ html {
     
 <script>
 /*__POPCODESTART__*/
-var name = $(".URL").val();
-var name = $(".Price").val();
-var name = $(".Name").val();
-
+var name = $("#Name").val();
+var name = $("#image").val();
+var name = $("#Price").val();
 
 $(".AddMe").click(function() {
-    $("img").attr("https://img2.cgtrader.com/items/657782/f160bb8a6a/katana-sakura-model-and-textures-3d-model-low-poly-obj-fbx.png");
+    $("#image").append("Product Image");
+    $("#Price").append("Price of Product");
+    $("#Name").append("Product name");
 });
 
-</script></body></html>
+$(".PleaseCheckout").click(function() {
+    alert ('Thank you for purchasing these items. Now they are automatically at your door and we appreciate your contribution');
+});
+Name.forEach(function(name) {
+    $("#Name").append("name" + "name" + "name");
+});</script></body></html>
