@@ -1,9 +1,16 @@
-var name = $(".URL").val();
-var name = $(".Price").val();
-var name = $(".Name").val();
-
+var name = $("#Name").val();
+var name = $("#image").val();
+var name = $("#Price").val();
 
 $(".AddMe").click(function() {
-    $("img").attr("https://img2.cgtrader.com/items/657782/f160bb8a6a/katana-sakura-model-and-textures-3d-model-low-poly-obj-fbx.png");
+    $("#image").append("Product Image");
+    $("#Price").append("Price of Product");
+    $("#Name").append("Product name");
 });
 
+$(".PleaseCheckout").click(function() {
+    alert ('Thank you for purchasing these items. Now they are automatically at your door and we appreciate your contribution');
+});
+Name.forEach(function(name) {
+    $("#Name").append("name" + "name" + "name");
+});
