@@ -11,6 +11,3 @@ $(".AddMe").click(function() {
 $(".PleaseCheckout").click(function() {
     alert ('Thank you for purchasing these items. Now they are automatically at your door and we appreciate your contribution');
 });
-Name.forEach(function(name) {
-    $("#Name").append("name" + "name" + "name");
-});
